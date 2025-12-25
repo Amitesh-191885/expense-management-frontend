@@ -1,0 +1,1117 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    text-overflow: ellipsis;
+    /* border: 1px solid blue; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.boxShadowDefault {
+    box-shadow: 0px 0px 1.5px 1.5px rgba(113, 49, 160, 0.2);
+}
+
+.max-1-lines {
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.max-2-lines {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-input__input {
+    width: 50px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 6px;
+    background-color: #4245a8;
+}
+
+.file-input__label .svg {
+    height: 16px;
+    margin-right: 4px;
+}
+
+.glassEffect {
+    background-color: #ffffffc1;
+    backdrop-filter: blur(10px);
+}
+
+.section {
+    padding-top: 100px;
+    width: min(1920px, 100%);
+}
+
+.sectionSub {
+    padding-top: 60px;
+    width: min(1920px, 100%);
+}
+
+.iconCSS {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.button,
+.disabledButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 5px;
+    width: max-content;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+.modalCommon {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #0f0f0f2d;
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
+}
+
+.formModal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #0f0f0f47;
+    border-radius: 3px;
+}
+
+.modalCommonBack {
+    width: min(95%, 900px);
+    min-height: 300px;
+    max-height: min(550px, 70vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    background-color: #ffffff;
+    overflow: auto;
+    padding: 30px 10px;
+    border-radius: 3px;
+}
+
+.pageBreakAvoid {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.borderCheck {
+    border: 1px solid red;
+}
+
+.borderBottom {
+    border-bottom: 1px solid;
+}
+
+.borderFull {
+    border: 1px solid;
+}
+
+.viewMaxWidth {
+    max-width: 1920px;
+}
+
+.width100per {
+    width: 100%;
+}
+
+.width90per {
+    width: 90%;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.viewPageBack {
+    min-width: 80%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.width45 {
+    width: 45%;
+}
+
+.width60to100 {
+    width: 60%;
+}
+
+.width45to100,
+.holidayClassSelection,
+.holidayTypeSelection {
+    width: 45%;
+}
+
+.playStoreIcon {
+    width: 150px;
+    height: 50px;
+}
+
+.padding5px {
+    padding: 5px;
+}
+
+.marginHorizotal5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.addCut:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.addCut:active {
+    opacity: 0.5;
+}
+
+.minHeight90Per {
+    min-height: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.imageContain {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    object-fit: contain;
+    align-self: center;
+}
+
+.minHeight90 {
+    min-height: 90vh;
+}
+
+.flexRowHVCenterWarpGap10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flexRowSpaceBetweenCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+}
+
+.flexRowSpaceBetweenColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.flexRowCenterColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flexRowSpaceAround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.flexRowStart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.flexRowEnd {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.flexRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumnEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: center;
+    gap: 5px;
+}
+
+.flexRowAlignStart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexColumnsCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.flexColumnAlignCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexColumnAlignStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.flexColumnAlignEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.dot {
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.headingText {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.titleTextMessage {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+.messageText {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.15px;
+    text-align: justify;
+}
+
+.footerTextHeader {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.leftToRight {
+    animation-duration: 1s;
+    -webkit-animation-name: leftToRight;
+    animation-name: leftToRight;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.fadeIn {
+    animation-duration: 4s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes leftToRight {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* scroll bar style */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px transparent;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+.socialIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 12px 5px 2px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-text {
+    font-family: "Square Peg", cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.footerText {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    color: #000;
+}
+
+.footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.defaultCalender {
+    width: 100%;
+    max-height: 40px;
+    padding: 5;
+    border-color: "#E4C1F9";
+    background-color: "white";
+    border-width: 0.5;
+    min-height: 35px;
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.boldTxt {
+    font-size: 1rem;
+    font-weight: 700;
+    word-spacing: 1px;
+}
+
+.lightBoldTxt {
+    font-size: 1rem;
+    font-weight: 500;
+    /* color: #000000; */
+    word-spacing: 1px;
+}
+
+.fadeTxt {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #878787;
+    word-spacing: 1px;
+}
+
+.smallTxt {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    word-spacing: 1px;
+}
+
+.smallTxtForbtn {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    word-spacing: 1px;
+}
+
+.lightSmallTxt {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #000000;
+    word-spacing: 1px;
+}
+
+.vSmallTxt {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.errorText {
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: red;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.textWhite {
+    color: white;
+}
+
+.textBlack {
+    color: black;
+}
+
+.textGray {
+    color: #808080;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .modalCommonBack {
+        max-height: 80vh;
+    }
+
+    .mobileViewNone {
+        display: none;
+    }
+
+    .minHeight90Per {
+        max-height: 100%;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .section {
+        padding-top: 80px;
+    }
+
+    .sectionSub {
+        padding-top: 35px;
+    }
+
+    .logo-text {
+        font-size: 1.7rem;
+        letter-spacing: 0.15px;
+    }
+
+    .headingText {
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+    }
+
+    .titleTextMessage {
+        font-size: 0.8rem;
+        letter-spacing: 0.1px;
+    }
+
+    .messageText {
+        font-size: 0.6rem;
+        letter-spacing: 0px;
+    }
+
+    .footerText {
+        font-size: 0.9rem;
+    }
+
+    .footerTextHeader {
+        font-size: 1rem;
+    }
+
+    .socialIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .width45to100,
+    .width60to100,
+    .holidayClassSelection,
+    .holidayTypeSelection {
+        width: 100%;
+    }
+
+    .viewPageBack {
+        min-width: 98%;
+        max-width: 98%;
+    }
+
+    .playStoreIcon {
+        width: 90px;
+        height: 30px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .flexRowHVCenterWarpGap10 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .flexColumnAlignStart {
+        gap: 5px;
+    }
+
+    .flexRowSpaceBetweenColumn {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .flexRowCenterColumn {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .fadeTxt,
+    .lightSmallTxt,
+    .smallTxt,
+    .lightBoldTxt,
+    .boldTxt {
+        font-size: 0.8rem;
+        font-weight: 510;
+    }
+
+    .smallTxtForbtn {
+        font-size: 0.7rem;
+        font-weight: 550;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+    .modalCommonBack {
+        max-height: 80vh;
+    }
+
+    .mobileViewNone {
+        display: none;
+    }
+
+    .minHeight90Per {
+        max-height: 100%;
+    }
+
+    .section {
+        padding-top: 90px;
+    }
+
+    .sectionSub {
+        padding-top: 55px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
+        letter-spacing: 0.19px;
+    }
+
+    .headingText {
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+    }
+
+    .titleTextMessage {
+        font-size: 0.8rem;
+        letter-spacing: 0.1px;
+    }
+
+    .messageText {
+        font-size: 0.7rem;
+        letter-spacing: 0.1px;
+    }
+
+    .footerTextHeader {
+        font-size: 1.1rem;
+    }
+
+    .width45to100,
+    .width60to100,
+    .holidayClassSelection,
+    .holidayTypeSelection {
+        width: 100%;
+    }
+
+    .viewPageBack {
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .playStoreIcon {
+        width: 90px;
+        height: 30px;
+    }
+
+    .socialIcon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footerText {
+        font-size: 0.9rem;
+    }
+
+    .flexRowHVCenterWarpGap10 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .flexColumnAlignStart {
+        gap: 5px;
+    }
+
+    .app {
+        padding-top: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-height: 50vh;
+    }
+
+    .flexRowSpaceBetweenColumn {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .flexRowCenterColumn {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fadeTxt,
+    .lightSmallTxt,
+    .smallTxt,
+    .lightBoldTxt {
+        font-size: 0.9rem;
+        font-weight: 520;
+    }
+
+    .smallTxtForbtn {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (orientation: landscape) and (max-width: 992px) {
+    .modalCommonBack {
+        max-height: 80vh;
+    }
+
+    .flexRowHVCenterWarpGap10 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .flexColumnAlignStart {
+        gap: 5px;
+    }
+
+    .minHeight90Per {
+        min-height: 90%;
+        max-height: max-content;
+    }
+
+    .section {
+        padding-top: 90px;
+    }
+
+    .sectionSub {
+        padding-top: 60px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
+        letter-spacing: 0.2px;
+    }
+
+    .headingText {
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
+    }
+
+    .titleTextMessage {
+        font-size: 1rem;
+        letter-spacing: 0.2px;
+    }
+
+    .messageText {
+        font-size: 0.8rem;
+        letter-spacing: 0.1px;
+    }
+
+    .footerText {
+        font-size: 1rem;
+    }
+
+    .footerTextHeader {
+        font-size: 1.1rem;
+    }
+
+    .width60to100 {
+        width: 60%;
+    }
+
+    .width45to100,
+    .holidayClassSelection,
+    .holidayTypeSelection {
+        width: 45%;
+    }
+
+    .viewPageBack {
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .socialIcon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .playStoreIcon {
+        width: 120px;
+        height: 40px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .flexRowSpaceBetweenColumn {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flexRowCenterColumn {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fadeTxt,
+    .lightSmallTxt,
+    .smallTxt,
+    .lightBoldTxt {
+        font-size: 0.9rem;
+        font-weight: 520;
+    }
+
+    .smallTxtForbtn {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .fadeTxt,
+    .lightSmallTxt,
+    .smallTxt,
+    .lightBoldTxt {
+        font-size: 0.8rem;
+        font-weight: 520;
+    }
+
+    .smallTxtForbtn {
+        font-size: 0.68rem;
+        font-weight: 550;
+    }
+
+    .boldTxt {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .flexRowSpaceBetweenColumn {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+    .minHeight90Per {
+        min-height: 90%;
+        max-height: 90%;
+    }
+
+    .section {
+        padding-top: 100px;
+    }
+
+    .sectionSub {
+        padding-top: 70px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-text {
+        font-size: 2rem;
+        letter-spacing: 0.45px;
+    }
+
+    .headingText {
+        font-size: 2rem;
+        letter-spacing: 0.6px;
+    }
+
+    .titleTextMessage {
+        font-size: 1.4rem;
+        letter-spacing: 0.4px;
+    }
+
+    .messageText {
+        font-size: 1rem;
+        letter-spacing: 0.15px;
+    }
+
+    .footerText {
+        font-size: 1.1rem;
+    }
+
+    .footerTextHeader {
+        font-size: 1.3rem;
+    }
+
+    .socialIcon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .width60to100 {
+        width: 60%;
+    }
+
+    .width45to100,
+    .holidayClassSelection,
+    .holidayTypeSelection {
+        width: 45%;
+    }
+
+    .viewPageBack {
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .playStoreIcon {
+        width: 150px;
+        height: 50px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .flexRowSpaceBetweenColumn {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flexRowCenterColumn {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fadeTxt,
+    .lightSmallTxt,
+    .smallTxt,
+    .lightBoldTxt,
+    .smallTxtForbtn {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .boldTxt {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
